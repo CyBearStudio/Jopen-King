@@ -14,10 +14,13 @@ project(Jopen-King)
 # Set version information in a config.h file
 set(myproject_VERSION_MAJOR 1)
 set(myproject_VERSION_MINOR 0)
+
+
 configure_file(
-  "${PROJECT_SOURCE_DIR}/config.h.in"
+  "${PROJECT_SOURCE_DIR}/include/config.h.in"
   "${PROJECT_BINARY_DIR}/config.h"
   )
+
 include_directories("${PROJECT_BINARY_DIR}")
 
 # specify the C++ standard
@@ -26,6 +29,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Define sources and executable
 set(EXECUTABLE_NAME "Jopen-King")
+
 
 # generate list of source files
 file(GLOB_RECURSE CODE_FILES
