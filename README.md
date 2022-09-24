@@ -7,6 +7,14 @@ The game is coded in C++11.
 
 [<img src="https://www.sfml-dev.org/images/logo.png">](https://www.sfml-dev.org/index.php)
 
+## Resources
+
+[SFML Wiki](https://github.com/SFML/SFML/wiki)
+
+[SFML Documentation](https://www.sfml-dev.org/documentation/2.5.1/)
+
+[SFML Tutorials](https://www.sfml-dev.org/tutorials/2.5/)
+
 ## How to compile
 
 Using [CMAke](https://cmake.org "cmake.org") to compile is recommended.
