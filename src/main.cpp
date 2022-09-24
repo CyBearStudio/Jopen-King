@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 
   cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << endl;
 
-  sf::Window App(sf::VideoMode(800, 600), "myproject");
+  sf::Window App(sf::VideoMode(800, 600), "Jopen-King");
 
   while (App.isOpen()) {
     sf::Event Event;
