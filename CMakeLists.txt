@@ -9,7 +9,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 # (you can also set it on the command line: -D CMAKE_BUILD_TYPE=Release)
 
-project(myproject)
+project(Jopen-King)
 
 # Set version information in a config.h file
 set(myproject_VERSION_MAJOR 1)
@@ -20,9 +20,20 @@ configure_file(
   )
 include_directories("${PROJECT_BINARY_DIR}")
 
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 # Define sources and executable
-set(EXECUTABLE_NAME "myproject")
-add_executable(${EXECUTABLE_NAME} main.cpp)
+set(EXECUTABLE_NAME "Jopen-King")
+
+# generate list of source files
+file(GLOB_RECURSE CODE_FILES
+        "${PROJECT_SOURCE_DIR}/include/*.h"
+        "${PROJECT_SOURCE_DIR}/src/*.cpp"
+    )
+
+add_executable(${EXECUTABLE_NAME} ${CODE_FILES})
 
 
 # Detect and add SFML
@@ -36,7 +47,7 @@ add_executable(${EXECUTABLE_NAME} main.cpp)
 # ex) If you are using MacOS and installed with homebrew, set the values as shown below.
 # set(SFML_DIR "/usr/local/Cellar/sfml/2.5.1_1/lib/cmake/SFML")
 
-find_package(SFML 2.5 COMPONENTS network audio graphics window system REQUIRED)
+find_package(SFML 2.5.1 COMPONENTS network audio graphics window system REQUIRED)
 if(SFML_FOUND)
   include_directories(${SFML_INCLUDE_DIR})
   # SFML version >= 2.5
