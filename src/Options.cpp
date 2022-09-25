@@ -29,7 +29,7 @@ void Options::load(const std::string& lf)
 		std::string value = line.substr(pos + 1, line.size());
 
 		// determining setting and assigning value
-		if (option == "full")
+		if (option == "fullscreen")
 		{
 			if (value == "true")
 			{
@@ -62,7 +62,7 @@ void Options::save()
 	optionsFile.open(fileName, std::fstream::out | std::fstream::trunc);
 
 	// writing settings and value in alphabetical order
-	optionsFile << "full:";
+	optionsFile << "fullscreen:";
 	if (fullscreen)
 	{
 		optionsFile << "true";

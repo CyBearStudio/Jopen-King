@@ -61,7 +61,7 @@ void Game::init()
     mOptions.save();
 
     // leaving splash screen for 2 seconds for style
-	sf::sleep(sf::seconds(2.f));
+	sf::sleep(sf::seconds(1.f));
     
     // re-creating the main window to display game
     mWindow.create(mOptions.getVideoMode(), GlobalResource::WINDOW_TITLE + mVersion, mOptions.getStyle());
