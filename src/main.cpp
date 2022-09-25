@@ -6,8 +6,10 @@ int main(int argc, char* argv[]) {
 
   Game game; // creating a new game object
 
-    game.init(); // initializing the game
-    game.run(); // running the game
+  std::cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << std::endl;
 
-    return 0;
+  game.init(); // initializing the game
+  game.run(); // running the game
+
+  return 0;
 }
