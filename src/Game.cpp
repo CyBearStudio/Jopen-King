@@ -32,6 +32,7 @@ void Game::init()
     mLogger.log(GlobalResource::LOG_LOADED + GlobalResource::FONT_MAIN, LOG::INFO);
     sf::Text versionText(GlobalResource::STAT_VERSION + mVersion, mFont);
     versionText.setFillColor(sf::Color::White);
+    versionText.setCharacterSize(GlobalResource::STAT_SIZE);
     
     // loading splash
 	sf::Texture splashTexture;
@@ -138,7 +139,8 @@ void Game::render()
     sf::Text statText;
     statText.setFont(mFont);
     statText.setFillColor(sf::Color(255, 255, 255));
-    statText.setString(GlobalResource::STAT_VERSION + mVersion + "; " + GlobalResource::STAT_FPS + std::to_string(int(fps)));
+    statText.setString(GlobalResource::STAT_VERSION + mVersion + " - " + GlobalResource::STAT_FPS + std::to_string(int(fps)));
+    statText.setCharacterSize(GlobalResource::STAT_SIZE);
 
     // initializing title text
     sf::Text titleText(GlobalResource::TEXT_TITLE, mFont, 90);

@@ -16,6 +16,7 @@ public:
     // stats
     static const std::string STAT_VERSION;
     static const std::string STAT_FPS;
+    static const int STAT_SIZE;
 
     // utility files
     static const std::string FILE_LOG;

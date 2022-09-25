@@ -61,6 +61,8 @@ if(SFML_FOUND)
   target_link_libraries(${PROJECT_NAME} sfml-network sfml-audio sfml-graphics sfml-window sfml-system)
 endif()
 
+## If you want to link SFML statically
+# set(SFML_STATIC_LIBRARIES TRUE)
 
 # Install target
 install(TARGETS ${EXECUTABLE_NAME} DESTINATION bin)
