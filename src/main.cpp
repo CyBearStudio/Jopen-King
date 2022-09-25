@@ -1,16 +1,13 @@
 #include "config.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics.hpp>
 
-
-using namespace std;
 
 int main(int argc, char* argv[]) {
 
   // Code adapted from the SFML 2 "Window" example.
 
-  cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << endl;
+  std::cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << std::endl;
 
   sf::Window App(sf::VideoMode(800, 600), "Jopen-King");
 
@@ -22,4 +19,7 @@ int main(int argc, char* argv[]) {
     }
     App.display();
   }
+
+  return 0;
+
 }
