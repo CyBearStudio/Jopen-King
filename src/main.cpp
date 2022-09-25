@@ -1,25 +1,13 @@
-#include "config.h"
-#include <iostream>
-#include <SFML/Graphics.hpp>
+#include "Game.h"
 #include <SFML/Graphics.hpp>
 
-
-using namespace std;
 
 int main(int argc, char* argv[]) {
 
-  // Code adapted from the SFML 2 "Window" example.
+  Game game; // creating a new game object
 
-  cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << endl;
+    game.init(); // initializing the game
+    game.run(); // running the game
 
-  sf::Window App(sf::VideoMode(800, 600), "Jopen-King");
-
-  while (App.isOpen()) {
-    sf::Event Event;
-    while (App.pollEvent(Event)) {
-      if (Event.type == sf::Event::Closed)
-	App.close();
-    }
-    App.display();
-  }
+    return 0;
 }
