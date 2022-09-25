@@ -7,6 +7,7 @@ const std::string GlobalResource::WINDOW_TITLE = "Within Darkness ";
 // stats
 const std::string GlobalResource::STAT_VERSION = "VERSION ";
 const std::string GlobalResource::STAT_FPS = "FPS ";
+const int GlobalResource::STAT_SIZE = 20;
 
 // utility files
 const std::string GlobalResource::FILE_LOG = "latestlog.txt";
@@ -25,7 +26,7 @@ const std::string GlobalResource::LOG_OPTIONS_LOADED = "Loaded options from file
 const std::string GlobalResource::LOG_OPTIONS_SAVED = "Saved options in file ";
 
 // texts
-const std::string GlobalResource::TEXT_TITLE = "Within Darkness";
+const std::string GlobalResource::TEXT_TITLE = "Jopen King";
 const std::string GlobalResource::TEXT_CONTINUE = "Press any key to continue";
 
 // fonts
