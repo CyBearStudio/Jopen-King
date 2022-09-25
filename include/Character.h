@@ -1,5 +1,5 @@
-#ifndef ENTITY_H
-#define ENTITY_H
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
 #include "SFML/Graphics.hpp"
 
@@ -12,9 +12,10 @@ public:
 
 
 private:
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
-    std::map<State,sf::Image> sprites;
+    std::map<State,sf::Texture> sprites;
+    State curr_state;
 
 };
 
