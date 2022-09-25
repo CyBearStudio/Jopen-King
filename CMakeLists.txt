@@ -12,8 +12,8 @@ endif()
 project(Jopen-King)
 
 # Set version information in a config.h file
-set(myproject_VERSION_MAJOR 1)
-set(myproject_VERSION_MINOR 0)
+set(PROJECT_VERSION_MAJOR 1)
+set(PROJECT_VERSION_MINOR 0)
 
 
 configure_file(
@@ -39,6 +39,8 @@ file(GLOB_RECURSE CODE_FILES
 
 add_executable(${EXECUTABLE_NAME} ${CODE_FILES})
 
+
+target_include_directories(${PROJECT_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/include")
 
 # Detect and add SFML
 
