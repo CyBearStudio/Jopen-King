@@ -2,7 +2,7 @@
 
 
 // window setup
-const std::string GlobalResource::WINDOW_TITLE = "Within Darkness ";
+const std::string GlobalResource::WINDOW_TITLE = "Jopen King ";
 
 // stats
 const std::string GlobalResource::STAT_VERSION = "VERSION ";
@@ -18,7 +18,7 @@ const std::string GlobalResource::LOG_INIT = "Initialized game";
 const std::string GlobalResource::LOG_STOP = "Stopping!";
 const std::string GlobalResource::LOG_SPLASH = "Showed splash screen";
 const std::string GlobalResource::LOG_RUN = "Launched game";
-const std::string GlobalResource::LOG_VERSION = "Within Darkness client version ";
+const std::string GlobalResource::LOG_VERSION = "Jopen King client version ";
 const std::string GlobalResource::LOG_MISSING = "Missing file ";
 const std::string GlobalResource::LOG_LOADED = "Loaded file ";
 const std::string GlobalResource::LOG_UNLOADED = "Attempting to access a resource that wasn't loaded before";
