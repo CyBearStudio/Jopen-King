@@ -26,7 +26,7 @@ Using [CMAke](https://cmake.org "cmake.org") to compile is recommended.
 **Github identification is required when cloning with HTTP.**
 
 ```
-git clone https://github.com/CyBearStudio/within_darkness.git
+git clone https://github.com/CyBearStudio/Jopen-King.git
 cd within_darkness
 mkdir build
 cd build
@@ -39,7 +39,7 @@ cmake --build .
 **Github SSH key setup is required when cloning with SSH.**
 
 ```
-git clone git@github.com:CyBearStudio/within_darkness.git
+git clone git@github.com:CyBearStudio/Jopen-King.git
 cd within_darkness
 mkdir build
 cd build
