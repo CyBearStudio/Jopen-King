@@ -3,5 +3,5 @@
 
 Level::Level(sf::Texture lvl)
 {
-    this->level = sf::Sprite(lvl);
+    this->img = sf::Sprite(lvl);
 }
